@@ -43,15 +43,17 @@ export function SinglePagePortfolio() {
 
       <div className="container mx-auto px-6 lg:px-8 max-w-4xl">
         <div className="text-center space-y-8">
-          {/* Main Content */}
           <div
             className={`transition-all duration-1000 ${
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <h1 className="text-6xl lg:text-8xl font-bold text-balance leading-tight mb-6">
-              Eric Hong
-            </h1>
+            {/* Responsive container that scales with viewport */}
+            <div className="w-[80vw] h-[80vw] max-w-[600px] max-h-[600px] mx-auto flex items-center justify-center">
+              <h1 className="text-6xl lg:text-8xl font-bold text-balance leading-tight animate-[spin_20s_linear_infinite]">
+                Eric Hong
+              </h1>
+            </div>
           </div>
         </div>
       </div>
